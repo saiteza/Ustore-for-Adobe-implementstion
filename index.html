@@ -64,13 +64,21 @@ document.write(unescape("%3Cscript src='"+ dexBaseURL +
           }
         }
 	    
-	   window.digitalData.push({
-		   "event":"page loaded",
-		   "page":{
-			  "pagename":"home",
-                            "platform":"pwa"
-		   }
-	   })
+	 
+	    var dataLayer = window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+ 
+      "pagename":"home",
+       "pageURL":window.location.href
+       "platform":var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  return "Mobile PWA";
+} 
+else {
+  return "PWA";
+}
+  
+});
       </script>
   </head>
   <body>
