@@ -69,13 +69,13 @@ document.write(unescape("%3Cscript src='"+ dexBaseURL +
           }
         }
 	 var dataLayer=dataLayer||{};
-        dataLayer={
+        dataLayer.push({
           
             pagename:"Homepage",
             siteSection:"main page",
 		pageURL:window.location.href, 
           
-        }
+        })
 	        
 	 
 	/**    var dataLayer = window.dataLayer = window.dataLayer || [];
