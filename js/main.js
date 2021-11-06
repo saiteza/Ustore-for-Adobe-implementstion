@@ -4,7 +4,12 @@ jQuery(document).ready(function($){
     
 	$(".mainmenu-area").sticky({topSpacing:0});
     
-    
+    document.querySelector('.navbar-nav').addEventListener('click', function(){
+    dataLayer.push({
+    'event': 'display more',
+  });
+  alert('this has pushed to the dataLayer: '+JSON.stringify(dataLayer[dataLayer.length -1]));
+});
     $('.product-carousel').owlCarousel({
         loop:true,
         nav:true,
