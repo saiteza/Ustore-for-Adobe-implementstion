@@ -7,8 +7,12 @@ jQuery(document).ready(function($){
     document.querySelector('.navbar-nav').addEventListener('click', function(){
     dataLayer.push({
     'event': 'display more',
+	     "section" :document.querySelector(".navbar-nav>li>a").innerText,
+        
+		"pageURL":window.location.href
+	    
   });
-  alert('this has pushed to the dataLayer: '+JSON.stringify(dataLayer[dataLayer.length -1]));
+  //alert('this has pushed to the dataLayer: '+JSON.stringify(dataLayer[dataLayer.length -1]));
 });
     $('.product-carousel').owlCarousel({
         loop:true,
