@@ -172,14 +172,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </button>
                 </div> 
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav"        onclick="<script>dataLayer.push({
-          
-            
-            "section" :"sample",
-        
-		"pageURL":window.location.href
-          
-			 });</script>">
+			<Script> document.querySelector('.navbar-nav').addEventListener('click', function(){
+    dataLayer.push({
+    'event': 'display more',
+  });
+  alert('this has pushed to the dataLayer: '+JSON.stringify(dataLayer[dataLayer.length -1]));
+});</script>
+                    <ul class="nav navbar-nav" >
+			    
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop page</a></li>
                         <li><a href="single-product.html">Single product</a></li>
