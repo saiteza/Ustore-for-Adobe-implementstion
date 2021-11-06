@@ -172,7 +172,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </button>
                 </div> 
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav"        onclick="window.dataLayer.push({
+          
+            
+            "section" :document.querySelector(".navbar-nav>li>a").innerText,
+        
+		"pageURL":window.location.href
+          
+        });">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop page</a></li>
                         <li><a href="single-product.html">Single product</a></li>
