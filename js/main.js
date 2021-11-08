@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
     
 	$(".mainmenu-area").sticky({topSpacing:0});
     var s=d
-    document.querySelector('.navbar-nav li a').addEventListener('click', function(){
+    document.querySelector('.navbar-nav>li>a').addEventListener('click', function(){
     dataLayer.push({
     'event': 'display more',
 	     "section" :this.innerText,
