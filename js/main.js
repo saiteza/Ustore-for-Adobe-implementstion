@@ -3,11 +3,11 @@ jQuery(document).ready(function($){
     // jQuery sticky Menu
     
 	$(".mainmenu-area").sticky({topSpacing:0});
-    
-    document.querySelector('.navbar-nav').addEventListener('click', function(){
+    var s=d
+    document.querySelector('.navbar-nav li a').addEventListener('click', function(){
     dataLayer.push({
     'event': 'display more',
-	     "section" :document.querySelector(".navbar-nav>li>a").innerText,
+	     "section" :this.innerText,
         
 		"pageURL":window.location.href
 	    
