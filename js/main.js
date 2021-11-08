@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
     // jQuery sticky Menu
     
 	$(".mainmenu-area").sticky({topSpacing:0});
-    var s=d
+    
     document.querySelector('.navbar-nav>li>a').addEventListener('click', function(){
     dataLayer.push({
     'event': 'display more',
